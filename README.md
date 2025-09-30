@@ -1,2 +1,4 @@
 # Simon-Game
 Creating Simon Game using jQuery
+
+This Simon Game is built using jQuery, where the player must repeat an increasingly long sequence of flashing colored buttons. The game starts when any key is pressed, triggering nextSequence() to flash a random button and update the level. Each button click is tracked in userClickedPattern, with visual effects added using animatePress(). The checkAnswer() function compares the player’s input with the generated sequence — if correct, the sequence continues after a delay; if wrong, the screen flashes red (game-over class), a restart message appears, and startOver() resets the state. The game logic uses arrays to track both the system-generated sequence (gamePattern) and user input, while jQuery simplifies DOM updates, animations, and event handling.
